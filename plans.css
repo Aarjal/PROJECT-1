@@ -1,0 +1,148 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ ul{
+    display: flex;
+    padding: 20px 5px;
+    background-color: black;
+}
+ul li{
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+ul li a:hover{
+    background-color: rgba(168, 158, 158, 0.521);
+    padding: 20px 60px;
+    /* border-radius: 50px; */
+}
+ul li:last-child a{
+    color: rgb(245, 30, 30);
+}
+.last{
+    margin-left: auto;
+}
+ul li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 48px; /* adjust as needed */
+    background-color: rgb(75, 60, 60);
+    flex-direction: column;
+    padding: 10px 0;
+    width: 190px;
+    border-radius: 30px;
+}
+
+.dropdown li {
+    padding: 20px 20px ;
+    color: white;
+    font-family: cursive;
+}
+
+ul li:hover .dropdown {
+    display: flex;
+    
+}
+.dropdown li:hover {
+    background-color: rgb(155, 179, 171);
+    cursor: pointer;
+    border-radius: 30px;
+}
+body{
+    background: url('https://i.pinimg.com/736x/08/08/c7/0808c7a2ec7f3a9ff607ae38d6f920c6.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+}
+.plans-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.plans-section h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #ddd1d3;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: rgba(12, 10, 10, 0.6);
+    padding: 30px;
+    width: 280px;
+    border-radius: 20px;
+    border: 2px solid #54aec4;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(41, 34, 34, 0.8);
+}
+
+.plan-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ec5252;
+    
+}
+
+.price {
+    font-size: 24px;
+    color: #54aec4;
+    margin-bottom: 20px;
+}
+
+.plan-card ul {
+    list-style: none;
+    text-align: left;
+    background-color: rgb(157, 194, 98);
+    display: block;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.plan-card .buy-now {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #f50909;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.plan-card .buy-now:hover {
+    background-color: #cc7676;
+    transform: scale(1.05);
+}
