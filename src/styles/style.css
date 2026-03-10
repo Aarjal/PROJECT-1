@@ -1,0 +1,126 @@
+:root {
+    --bg-dark: #0f0f12;
+    --bg-nav: #050505;
+    --text-light: #ffffff;
+    --accent: #d32929;
+    --accent-soft: #d32929a4;
+    --muted: #54aec4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 18px 12px;
+    background-color: var(--bg-nav);
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 14px 24px;
+    color: var(--text-light);
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.25s ease;
+}
+
+.main-nav li a:hover {
+    background-color: rgba(168, 158, 158, 0.35);
+}
+
+.main-nav .last {
+    margin-left: auto;
+}
+
+.main-nav .last > a {
+    color: #ff6262;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    min-width: 180px;
+    border-radius: 12px;
+    background-color: #2b2121;
+    padding: 8px;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.main-nav li:hover .dropdown {
+    display: flex;
+}
+
+.hero {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../../assets/images/your-image-url.jpg") center / cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+#searchbar {
+    width: min(700px, 85vw);
+    height: 56px;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 30px;
+    border: 2px solid var(--muted);
+    background: rgba(22, 20, 20, 0.78);
+}
+
+#searchbar:focus {
+    outline: none;
+    border-color: #7ad6ed;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    background: var(--accent-soft);
+    color: #fff;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background: var(--accent);
+}

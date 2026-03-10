@@ -1,76 +1,9 @@
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
- ul{
-    display: flex;
-    padding: 20px 5px;
-    background-color: black;
-}
-ul li{
-    list-style: none;
-    
-}
-ul li a{
-    text-decoration: none;
-    padding: 20px 40px;
-    color: white;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 20px;
-}
-ul li a:hover{
-    background-color: rgba(168, 158, 158, 0.521);
-    padding: 20px 60px;
-    /* border-radius: 50px; */
-}
-ul li:last-child a{
-    color: rgb(245, 30, 30);
-}
-.last{
-    margin-left: auto;
-}
-ul li {
-    position: relative;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 48px; /* adjust as needed */
-    background-color: rgb(75, 60, 60);
-    flex-direction: column;
-    padding: 10px 0;
-    width: 190px;
-    border-radius: 30px;
-}
-
-.dropdown li {
-    padding: 20px 20px ;
-    color: white;
-    font-family: cursive;
-}
-
-ul li:hover .dropdown {
-    display: flex;
-    
-}
-.dropdown li:hover {
-    background-color: rgb(155, 179, 171);
-    cursor: pointer;
-    border-radius: 30px;
-}
-body{
-    background: url('https://i.pinimg.com/736x/08/08/c7/0808c7a2ec7f3a9ff607ae38d6f920c6.jpg') no-repeat center center fixed;
+.plans-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        url("../../assets/images/planbg.jpg") no-repeat center center fixed;
     background-size: cover;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-
 }
+
 .plans-section {
     padding: 50px 20px;
     text-align: center;
@@ -85,7 +18,7 @@ body{
 .plans-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
@@ -107,7 +40,6 @@ body{
     font-size: 28px;
     margin-bottom: 10px;
     color: #ec5252;
-    
 }
 
 .price {
@@ -119,14 +51,16 @@ body{
 .plan-card ul {
     list-style: none;
     text-align: left;
-    background-color: rgb(157, 194, 98);
     display: block;
+    margin-bottom: 18px;
 }
 
 .plan-card ul li {
     margin-bottom: 10px;
     font-size: 16px;
+    color: #f4f4f4;
 }
+
 .plan-card .buy-now {
     margin-top: 20px;
     display: inline-block;
