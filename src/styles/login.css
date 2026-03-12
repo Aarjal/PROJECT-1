@@ -51,3 +51,26 @@
     outline: none;
     border-color: #83d8eb;
 }
+
+.form-message {
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.form-message.success {
+    border-color: #38d66b;
+    color: #b8ffd0;
+}
+
+.form-message.error {
+    border-color: #ff6666;
+    color: #ffd5d5;
+}
+
+.form-note {
+    margin-bottom: 12px;
+    color: #dceef3;
+}

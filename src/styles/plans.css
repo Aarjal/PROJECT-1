@@ -80,3 +80,8 @@
     background-color: #cc7676;
     transform: scale(1.05);
 }
+
+#plan-message {
+    width: fit-content;
+    margin: 24px auto 0;
+}

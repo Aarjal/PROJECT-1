@@ -124,3 +124,23 @@ body {
     transform: translateY(-2px);
     background: var(--accent);
 }
+
+.flash-message,
+.status-text {
+    margin-top: 8px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+}
+
+.flash-message.success {
+    border-color: #38d66b;
+    color: #b8ffd0;
+}
+
+.flash-message.error {
+    border-color: #ff6666;
+    color: #ffd5d5;
+}

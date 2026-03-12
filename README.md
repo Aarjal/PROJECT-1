@@ -1,19 +1,21 @@
-# StreamFlix Frontend
+# StreamFlix (PHP + JS)
 
 ## Project Structure
 
-- `index.html` → entry redirect page
-- `src/pages/` → HTML pages
+- `index.php` → entry redirect page
+- `src/pages/` → PHP pages
 - `src/styles/` → shared and page-specific CSS
+- `src/php/` → backend scripts and DB setup
+- `src/scripts/` → frontend JavaScript interactions
 - `assets/images/` → image assets
 
 ## Pages
 
-- `home.html`
-- `login.html`
-- `movies.html`
-- `plans.html`
+- `home.php`
+- `login.php`
+- `movies.php`
+- `plans.php`
 
 ## Notes
 
-- Start from `index.html` or directly open `src/pages/home.html`.
+- Start from `index.php` or directly open `src/pages/home.php`.
